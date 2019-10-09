@@ -12,7 +12,7 @@ const ContactForm = () => {
             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
             .join("&");
       }
-      
+
     const handleChange = e => {
         e.persist();
         setValues(values => ({...values, [e.target.name]: e.target.value}));
@@ -29,10 +29,11 @@ const ContactForm = () => {
   
         e.preventDefault();
       };
+      console.log(values)
     return (
         <div className="contactFormBox">
             <form name='contact' method='post' className="contactForm ui form" onSubmit={handleSubmit}>
-            <input type="hidden" name="form-name" value="contact" />
+            {/* <input type="hidden" name="form-name" value="contact" /> */}
                 <div className="inputBox">
                     <label htmlFor="name" className='hidden'>
                     <input type="text" name='name' placeholder='Name' value={values.name} onChange={handleChange}/> Name
