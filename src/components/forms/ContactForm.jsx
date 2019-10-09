@@ -36,17 +36,17 @@ const ContactForm = () => {
             {/* <input type="hidden" name="form-name" value="contact" /> */}
                 <div className="inputBox">
                     <label htmlFor="name" className='hidden'>
-                    <input type="text" name='name' placeholder='Name' value={values.name} onChange={handleChange}/> Name
+                    <input className='show' type="text" name='name' placeholder='Name' value={values.name} onChange={handleChange}/>
                     </label>
                 </div>
                 <div className="inputBox">
                     <label htmlFor="email" className='hidden'>
-                    <input type="text" name='email' placeholder='Email' value={values.email} onChange={handleChange}/> Email
+                    <input type="text" name='email' placeholder='Email' value={values.email} onChange={handleChange}/>
                     </label>
                 </div>
                 <div className="inputBox">
                     <label htmlFor="message" className='hidden'>
-                    <textarea name='message' placeholder='Message' value={values.message} onChange={handleChange}/> Message
+                    <textarea name='message' placeholder='Message' value={values.message} onChange={handleChange}/>
                     </label>
                 </div>
                 <button type='submit'>Contact Me</button>
