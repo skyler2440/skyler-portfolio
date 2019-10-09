@@ -1,0 +1,32 @@
+input{
+    width: 50%;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+textarea{
+    width: 50%;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+button{
+    margin-top: .75rem;
+    border-radius: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+    input{
+
+        margin: .5rem auto;
+        width: 100%;
+        border-radius: 5px;
+    }
+    textarea{
+        margin: .5rem auto;
+        width: 100%;
+        border-radius: 5px;
+    }
+    button{
+        margin-top: .75rem;
+        border-radius: 5px;
+    }
+    }

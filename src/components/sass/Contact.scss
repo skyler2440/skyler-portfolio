@@ -1,0 +1,46 @@
+.contactMain{
+    display: flex;
+    flex-wrap: wrap;
+    word-wrap: none;
+    margin: 2rem auto;
+    width: 75%;
+
+}
+.contactLeft, .contactMid, .contactRight{
+    flex: 1;
+    margin: 1rem auto;
+}
+.contactMid{
+    word-wrap: none;
+    white-space: nowrap;
+}
+.ghlogo{
+    width: 100px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.lilogo{
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+
+}
+.twlogo{
+    width: 70px;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+}
+.contactRight{
+   display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 930px) {
+    .contactMain{
+        display: flex;
+flex-direction: column;
+        word-wrap: none;
+        .contactMid{
+            order:-1;
+        }
+    }
+    }

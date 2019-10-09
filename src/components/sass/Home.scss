@@ -1,0 +1,126 @@
+.homeMain{
+    margin: 2rem auto;
+    width: 75%;
+}
+.homeTopMain{
+    display: flex;
+}  
+.homeTopLeft{
+    // width: 25%;
+    flex-grow: 1;
+}
+.homeTopMid{
+    // width: 50%;
+    flex-grow: 2;
+}
+.homeTopRight{
+    // width:25%;
+    flex-grow: 1;
+}   
+.homeTopLeft, .homeTopMid, .homeTopRight{
+    flex: 1;
+}
+.homeMidTop{
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, .5);
+    border-radius: 1rem;
+    
+}
+i{
+    margin:0 1rem;
+}
+.homeMidTopLeft, .homeMidTopMid, .homeMidTopRight{
+    flex: 1;
+    white-space: nowrap;
+    margin:0 auto;
+    ul{
+        list-style-type: none;
+        text-align: center;
+    }
+}
+.homeMidMain{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.homeMidLeft{
+    margin:0 auto;
+    img{
+        width:150px;
+    }
+}
+.homeMidMid{
+    text-align: center;
+    margin:0 auto;
+}
+
+.homeBottomMain{
+    display: flex;
+    margin:0 auto;
+    flex-direction: column;
+    // justify-content: center;
+}
+.projBox{
+    display: flex;
+    margin:1rem auto;
+    justify-content: center;
+    flex-direction: row;
+    padding:1rem;
+    border-radius: 1rem;
+    box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, .5);
+
+
+    .projBoxLeft{
+        img{
+            max-width: 300px;
+        }
+    }
+    .projBoxRight{
+        text-align: left;
+
+    }
+}
+// .homeBotLeft, .homeBotMid, .homeBotRight{
+//     flex: 1;
+// }
+@media only screen and (max-width: 950px) {
+    .homeBottomMain{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .projBox{
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+    .projBoxLeft{
+        img{
+            max-width: 150px;
+        }
+    }}
+    .homeMidTop{
+        display: flex;
+        flex-direction: column;
+        box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, .5);
+        border-radius: 1rem;
+        
+    }
+}
+@media only screen and (max-width: 480px) {
+    .homeBottomMain{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+    }
+    .projBox{
+        // display: flex;
+        // justify-content: center;
+    .projBoxLeft{
+        img{
+display: none;
+        }
+    }}
+}
