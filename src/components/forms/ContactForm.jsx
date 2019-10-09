@@ -22,14 +22,14 @@ const ContactForm = () => {
         fetch("/", {
           method: "POST",
           headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", values })
+          body: encode({ "form-name": "contact", ...values })
         })
           .then(() => alert("Success!"))
           .catch(error => alert(error));
   
         e.preventDefault();
       };
-      console.log(values)
+      console.log(encode({ "form-name": "contact", ...values }))
     return (
         <div className="contactFormBox">
             <form name='contact' method='post' className="contactForm ui form" onSubmit={handleSubmit}>
