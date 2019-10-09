@@ -4,56 +4,111 @@ import * as Yup from 'yup';
 
 import '../sass/ContactForm.scss'
 
-const ContactForm = () => {
-    const [values, setValues] = useState({});
+// const ContactForm = () => {
+//     const [values, setValues] = useState({});
 
-    const encode = (data) => {
-        return Object.keys(data)
-            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-            .join("&");
-      }
+//     const encode = (data) => {
+//         return Object.keys(data)
+//             .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+//             .join("&");
+//       }
 
-    const handleChange = e => {
-        e.persist();
-        setValues(values => ({...values, [e.target.name]: e.target.value}));
-    };
+//     const handleChange = e => {
+//         e.persist();
+//         setValues(values => ({...values, [e.target.name]: e.target.value}));
+//     };
 
-    const handleSubmit = e => {
-        fetch("/", {
-          method: "POST",
-          headers: { "Content-Type": "application/x-www-form-urlencoded" },
-          body: encode({ "form-name": "contact", ...values })
-        })
-          .then(() => alert("Success!"))
-          .catch(error => alert(error));
+//     const handleSubmit = e => {
+//         fetch("/", {
+//           method: "POST",
+//           headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//           body: encode({ "form-name": "contact", ...values })
+//         })
+//           .then(() => alert("Success!"))
+//           .catch(error => alert(error));
   
-        e.preventDefault();
-      };
-      console.log(encode({ "form-name": "contact", ...values }))
-    return (
-        <div className="contactFormBox">
-            <form name='contact' method='post' className="contactForm ui form" onSubmit={handleSubmit}>
-            {/* <input type="hidden" name="form-name" value="contact" /> */}
-                <div className="inputBox">
-                    <label htmlFor="name" className='hidden'>
-                    <input className='show' type="text" name='name' placeholder='Name' value={values.name} onChange={handleChange}/>
-                    </label>
-                </div>
-                <div className="inputBox">
-                    <label htmlFor="email" className='hidden'>
-                    <input type="text" name='email' placeholder='Email' value={values.email} onChange={handleChange}/>
-                    </label>
-                </div>
-                <div className="inputBox">
-                    <label htmlFor="message" className='hidden'>
-                    <textarea name='message' placeholder='Message' value={values.message} onChange={handleChange}/>
-                    </label>
-                </div>
-                <button type='submit'>Contact Me</button>
-            </form>
-        </div>
-    )
-}
+//         e.preventDefault();
+//       };
+//       console.log(encode({ "form-name": "contact", ...values }))
+//     return (
+//         <div className="contactFormBox">
+//             <form name='contact' method='post' className="contactForm ui form" onSubmit={handleSubmit}>
+//             {/* <input type="hidden" name="form-name" value="contact" /> */}
+//                 <div className="inputBox">
+//                     <label htmlFor="name" className='hidden'>
+//                     <input className='show' type="text" name='name' placeholder='Name' value={values.name} onChange={handleChange}/>
+//                     </label>
+//                 </div>
+//                 <div className="inputBox">
+//                     <label htmlFor="email" className='hidden'>
+//                     <input type="text" name='email' placeholder='Email' value={values.email} onChange={handleChange}/>
+//                     </label>
+//                 </div>
+//                 <div className="inputBox">
+//                     <label htmlFor="message" className='hidden'>
+//                     <textarea name='message' placeholder='Message' value={values.message} onChange={handleChange}/>
+//                     </label>
+//                 </div>
+//                 <button type='submit'>Contact Me</button>
+//             </form>
+//         </div>
+//     )
+// }
+const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+class ContactForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = { name: "", email: "", message: "" };
+    }
+
+    /* Here’s the juicy bit for posting the form submission */
+
+    handleSubmit = e => {
+      fetch("/", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: encode({ "form-name": "contact", ...this.state })
+    })
+    console.log("TCL: ContactForm -> ...this.state", this.state)
+    .then(() => alert("Success!"))
+    .catch(error => alert(error));
+    
+
+      e.preventDefault();
+    };
+    
+    handleChange = e => this.setState({ [e.target.name]: e.target.value });
+    
+    render() {
+        const { name, email, message } = this.state;
+        return (
+        <form onSubmit={this.handleSubmit}>
+          <p>
+            <label>
+              Your Name: <input type="text" name="name" value={name} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Your Email: <input type="email" name="email" value={email} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <label>
+              Message: <textarea name="message" value={message} onChange={this.handleChange} />
+            </label>
+          </p>
+          <p>
+            <button type="submit">Send</button>
+          </p>
+        </form>
+      );
+    }
+  }
 
 export default ContactForm
 
