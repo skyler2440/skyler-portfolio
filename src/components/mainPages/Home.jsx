@@ -3,6 +3,8 @@ import "../sass/Home.scss";
 import profile from "../../images/profile.png";
 import evanity from "../../images/e-vanity1.png";
 import evanity1 from "../../images/e-vanity2.png";
+import ng from '../../images/ng.png';
+
 import rentech from "../../images/rentech1.png";
 import rentech1 from "../../images/rentech2.png";
 import tip from "../../images/tip1.png";
@@ -110,12 +112,12 @@ const Home = () => {
           <div className="homeBotRight">
             <div className="projBox">
               <div className="projBoxLeft">
-                <img src={tip} alt="Tipease Example" className="proj3" />
+                <img src={ng} alt="Netgiver Example" className="proj3" />
               </div>
               <div className="projBoxRight">
-                <h1 className="projHeader">Tipease</h1>
-                <p className="projP">School Project -- Tipping Made Simple</p>
-                <Link className="projLink" to="/projects#tipease">
+                <h1 className="projHeader">Net Giver Work Order Management</h1>
+                <p className="projP">React Native -- Work Order Management Software</p>
+                <Link className="projLink1" to="/projects#ngwo">
                   Learn More...
                 </Link>
               </div>
