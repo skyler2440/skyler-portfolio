@@ -16,10 +16,10 @@ const Projects = () => {
 
       <div className="projectPage">
         <div className="projectsHeader">
-          <h1>My Projects</h1>
+          <h1 className="header">My Projects</h1>
         </div>
         <div className="project0Header">
-          <h1 className="h1Text projectHeaderText">
+          <h1 className="h1Text projectHeaderText header">
             Net Giver Work Order Management
           </h1>
         </div>
@@ -73,7 +73,7 @@ const Projects = () => {
         </div>
         <div className="project1Header">
           <a id="evan"></a>
-          <h1 className="h1Text projectHeaderText">Erica's Vanity</h1>
+          <h1 className="h1Text projectHeaderText header">Erica's Vanity</h1>
         </div>
         <div className="project1BodyMain projectBodyMain">
           <div className="project1BodyRight projectBodyRight">
@@ -116,7 +116,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project2Header">
-          <h1 className="h1Text projectHeaderText">Use My Tech Stuff</h1>
+          <h1 className="h1Text projectHeaderText header">Use My Tech Stuff</h1>
         </div>
         <div className="project2BodyMain projectBodyMain">
           <div className="project2BodyRight projectBodyRight">
@@ -174,7 +174,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project3Header">
-          <h1 className="h1Text projectHeaderText">Tipease</h1>
+          <h1 className="h1Text projectHeaderText header">Tipease</h1>
         </div>
         <div className="project3BodyMain projectBodyMain">
           <a id="tipease"></a>

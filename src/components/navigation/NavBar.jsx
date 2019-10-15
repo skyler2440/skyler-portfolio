@@ -42,7 +42,7 @@ const NavBar = () => {
             <img className='logo' onClick={e=>{ var hide = document.querySelector("#navHide"); hide.classList.toggle("hidden")}} src={logo} alt="logo placeholder"/>
             </div>
             <div id="navHide" className="navRight hidden">
-            <NavLink className="navLink" to='/'>Home</NavLink>
+            <NavLink exact className="navLink" to='/'>Home</NavLink>
             <NavLink className="navLink" to='/projects'>Projects</NavLink>
             <NavLink className="navLink" to="/contact">Contact</NavLink>
             </div>

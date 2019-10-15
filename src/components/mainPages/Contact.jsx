@@ -18,7 +18,7 @@ const Contact = () => {
 
             </div>
             <div className="contactMid">
-                <h1>Resume</h1>
+                <h1 className="header">Resume</h1>
             <a href="https://resume.creddle.io/resume/edlcf7lr5ji" target="_blank"><img className="resume" src={resume} alt='resume'/></a>
             </div>
             <div className="contactRight">
@@ -27,6 +27,7 @@ const Contact = () => {
                 <a href="https://twitter.com/skylerwebdev"><img className="twlogo" src={twlogo} alt="twitter logo"/></a>
             </div>
         </div>
+        <h1 className="header">Contact Me!</h1>
         <ContactForm />
         </>
     )

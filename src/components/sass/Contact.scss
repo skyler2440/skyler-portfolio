@@ -4,7 +4,13 @@
     word-wrap: none;
     margin: 2rem auto;
     width: 75%;
+    font-family: 'Ubuntu', serif;
 
+}
+.header{
+    font-family: 'Permanent Marker', cursive;
+    font-size: 2.5rem;
+    color: #0A2239;
 }
 .contactLeft, .contactMid, .contactRight{
     flex: 1;
@@ -36,6 +42,7 @@
 }
 .resume{
     box-shadow: 5px 4px 15px 1px rgba(0, 0, 0, .5);
+    padding: 0;
 }
 @media only screen and (max-width: 1030px) {
     .contactMain{

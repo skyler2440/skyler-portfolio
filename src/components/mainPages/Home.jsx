@@ -22,15 +22,15 @@ const Home = () => {
         </div>
         <div className="homeMidMain">
           <div className="homeMidLeft">
-            <img src={profile} alt="profile" />
+            <img className="propic" src={profile} alt="profile" />
           </div>
           <div className="homeMidMid">
-            <h1>Skyler Dowdy "Code the world!"</h1>
-            <h3>Professional Profile</h3>
+            <h1 className="header">Skyler Dowdy</h1>
+            <h3 className="header">"Always a work in progress!"</h3>
           </div>
           {/* <div className="homeMidRight"></div> */}
         </div>
-        <h1>Skills</h1>
+        <h1 className="header">Skills</h1>
         <div className="homeMidTop">
           <div className="homeMidTopLeft">
             <ul>
@@ -71,7 +71,7 @@ const Home = () => {
           </div>
         </div>
         <div className="homeMidMidBot">
-          <h1>My projects</h1>
+          <h1 className="header">My projects</h1>
         </div>
         <div className="homeBottomMain">
           <div className="homeBotLeft">
@@ -84,7 +84,7 @@ const Home = () => {
                 />
               </div>
               <div className="projBoxRight">
-                <h1 className="projHeader">Erica's Vanity</h1>
+                <h1 className="projHeader header">Erica's Vanity</h1>
                 <p className="projP">Custom blog built in React and Java</p>
                 <Link className="projLink" to="/projects#evan">
                   Learn More...
@@ -99,7 +99,7 @@ const Home = () => {
                 <img src={rentech1} alt="Rentech Example" className="proj2" />
               </div>
               <div className="projBoxRight">
-                <h1 className="projHeader">Use My Tech Stuff</h1>
+                <h1 className="projHeader header">Use My Tech Stuff</h1>
                 <p className="projP">
                   School Project -- User to User Tech Rentals
                 </p>
@@ -115,7 +115,9 @@ const Home = () => {
                 <img src={ng} alt="Netgiver Example" className="proj3" />
               </div>
               <div className="projBoxRight">
-                <h1 className="projHeader">Net Giver Work Order Management</h1>
+                <h1 className="projHeader header">Net Giver</h1>
+                <h1 className="projHeader1 header"> Work Order Management</h1>
+
                 <p className="projP">React Native -- Work Order Management Software</p>
                 <Link className="projLink1" to="/projects#ngwo">
                   Learn More...
