@@ -115,6 +115,7 @@ const Home = () => {
                 <img src={ng} alt="Netgiver Example" className="proj3" />
               </div>
               <div className="projBoxRight">
+              <h1 className="projHeader header">***JUST STARTED***</h1>
                 <h1 className="projHeader header">Net Giver</h1>
                 <h1 className="projHeader1 header"> Work Order Management</h1>
 
