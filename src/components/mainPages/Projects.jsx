@@ -12,14 +12,16 @@ import tip1 from '../../images/tip2.png';
 const Projects = () => {
   return (
     <>
-              <a id="ngwo"></a>
+      <a id="ngwo"></a>
 
       <div className="projectPage">
         <div className="projectsHeader">
           <h1>My Projects</h1>
         </div>
         <div className="project0Header">
-          <h1 className="h1Text projectHeaderText">Net Giver Work Order Management</h1>
+          <h1 className="h1Text projectHeaderText">
+            Net Giver Work Order Management
+          </h1>
         </div>
         <div className="project0BodyMain projectBodyMain">
           <div className="project0BodyRight projectBodyRight">
@@ -31,27 +33,23 @@ const Projects = () => {
               {/* <button onClick={e=>window.open("https://www.google.com")}>Check out the Site</button> */}
             </div>
             <div className="projectExplain">
-            <h4 className="h4Text">About the Project</h4>
+              <h4 className="h4Text">About the Project</h4>
               <ul>
-                  <li>School Labs Project</li>
+                <li>School Labs Project</li>
+                <li></li>
+                <li></li>
+              </ul>
+              <h4 className="h4Text">Specific Contribution</h4>
+              <ul>
+                <li>Building the Redux components</li>
                 <li>
-                 
+                  Connecting the Redux components to the frontend and backend
                 </li>
                 <li>
-                  
+                  Getting the JWT and Data from the backend and injecting them
+                  into the Redux Store
                 </li>
-                </ul>
-                <h4 className="h4Text">Specific Contribution</h4>
-                <ul>
-                  <li>Building the Redux components</li>
-                  <li>
-                    Connecting the Redux components to the frontend and backend
-                  </li>
-                  <li>
-                    Getting the JWT and Data from the backend and injecting them
-                    into the Redux Store
-                  </li>
-                </ul>
+              </ul>
             </div>
             <div className="techUsed">
               <h4 className="h4Text">Technologies Used</h4>
@@ -65,11 +63,10 @@ const Projects = () => {
               </ul>
               <h5 className="h5Text">Back End</h5>
               <ul>
-                <li>NodeJs</li>
+                <li>Node.js</li>
                 <li>Apollo</li>
                 <li>GraphQL</li>
                 <li>PostgreSQL</li>
-               
               </ul>
             </div>
           </div>
@@ -92,7 +89,7 @@ const Projects = () => {
               <p className="pText">
                 I built this page by myself and it was ready to handle user
                 authentication, adding blog posts, and comments within a week of
-                getting started. I will be maintianing and adding future updates
+                getting started. I will be maintaining and adding future updates
                 to this project.
               </p>
             </div>
@@ -134,7 +131,7 @@ const Projects = () => {
             <div className="projectExplain">
               <h4 className="h4Text">About the Project</h4>
               <ul>
-              <li>School Labs Project</li>
+                <li>School Labs Project</li>
 
                 <li>
                   Make tech items available to be rented out by their owners
@@ -142,18 +139,17 @@ const Projects = () => {
                 <li>
                   Built in one week by myself and 4 other student developers
                 </li>
-                </ul>
-                <h4 className="h4Text">Specific Contribution</h4>
-                <ul>
-                  <li>Building the forms using Formik and Yup</li>
-                  <li>Connecting the forms to the Redux store</li>
-                  <li>Making the Forms Compatible with Semantic UI</li>
-                  <li>
-                    Assisting the other developers in the main functionality of
-                    the application
-                  </li>
-                </ul>
-              
+              </ul>
+              <h4 className="h4Text">Specific Contribution</h4>
+              <ul>
+                <li>Building the forms using Formik and Yup</li>
+                <li>Connecting the forms to the Redux store</li>
+                <li>Making the Forms Compatible with Semantic UI</li>
+                <li>
+                  Assisting the other developers in the main functionality of
+                  the application
+                </li>
+              </ul>
             </div>
             <div className="techUsed">
               <h4 className="h4Text">Technologies Used</h4>
@@ -168,7 +164,7 @@ const Projects = () => {
               </ul>
               <h5 className="h5Text">Back End</h5>
               <ul>
-                <li>NodeJs</li>
+                <li>Node.js</li>
                 <li>Express</li>
                 <li>OAuth</li>
                 <li>MongoDB</li>
@@ -190,13 +186,12 @@ const Projects = () => {
           <div className="project3BodyLeft projectBodyLeft">
             <div className="deployedLinks">
               {/* <button onClick={e=>window.open("https://www.google.com")}>Check out the Site</button> */}
-              
             </div>
 
             <div className="projectExplain">
               <h4 className="h4Text">About the Project</h4>
               <ul>
-                  <li>School Labs Project</li>
+                <li>School Labs Project</li>
                 <li>
                   Revolutionize tipping by taking out the middleman and allowing
                   users to control their own tips
@@ -204,19 +199,18 @@ const Projects = () => {
                 <li>
                   Built in one week by myself and 3 other student developers
                 </li>
-                </ul>
-                <h4 className="h4Text">Specific Contribution</h4>
-                <ul>
-                  <li>Building the Redux components</li>
-                  <li>
-                    Connecting the Redux components to the frontend and backend
-                  </li>
-                  <li>
-                    Getting the JWT and Data from the backend and injecting them
-                    into the Redux Store
-                  </li>
-                </ul>
-              
+              </ul>
+              <h4 className="h4Text">Specific Contribution</h4>
+              <ul>
+                <li>Building the Redux components</li>
+                <li>
+                  Connecting the Redux components to the frontend and backend
+                </li>
+                <li>
+                  Getting the JWT and Data from the backend and injecting them
+                  into the Redux Store
+                </li>
+              </ul>
             </div>
             <div className="techUsed">
               <h4 className="h4Text">Technologies Used</h4>
