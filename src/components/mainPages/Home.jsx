@@ -26,6 +26,7 @@ const Home = () => {
           </div>
           <div className="homeMidMid">
             <h1 className="header">Skyler Dowdy</h1>
+            <h3><a href="https://resume.creddle.io/resume/edlcf7lr5ji" target="_blank" className="noFormats">Click for Resume</a></h3>
             <h3 className="header">"Always a work in progress!"</h3>
           </div>
           {/* <div className="homeMidRight"></div> */}
@@ -115,7 +116,6 @@ const Home = () => {
                 <img src={ng} alt="Netgiver Example" className="proj3" />
               </div>
               <div className="projBoxRight">
-              <h1 className="projHeader header">***JUST STARTED***</h1>
                 <h1 className="projHeader header">Net Giver</h1>
                 <h1 className="projHeader1 header"> Work Order Management</h1>
 

@@ -23,6 +23,9 @@
 .homeTopLeft, .homeTopMid, .homeTopRight{
     flex: 1;
 }
+.noFormat{
+    text-decoration: none;
+}
 .homeMidTop{
     display: flex;
     flex-wrap: wrap;

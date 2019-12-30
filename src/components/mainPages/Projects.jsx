@@ -30,24 +30,23 @@ const Projects = () => {
           </div>
           <div className="project0BodyLeft  projectBodyLeft">
             <div className="deployedLinks">
-              {/* <button onClick={e=>window.open("https://www.google.com")}>Check out the Site</button> */}
+              <button onClick={e=>window.open("https://play.google.com/store/apps/details?id=com.netgiver.workordermanager&hl=en_US")}>Check out the App on Google Play</button>
             </div>
             <div className="projectExplain">
               <h4 className="h4Text">About the Project</h4>
               <ul>
                 <li>School Labs Project</li>
-                <li></li>
-                <li></li>
               </ul>
               <h4 className="h4Text">Specific Contribution</h4>
               <ul>
-                <li>Building the Redux components</li>
+                <li>Deployed the app to Google Play Store</li>
+                <li>Building the Navigation Components</li>
                 <li>
-                  Connecting the Redux components to the frontend and backend
+                  Connecting the Frontend to backend with axios and GraphQL
                 </li>
                 <li>
                   Getting the JWT and Data from the backend and injecting them
-                  into the Redux Store
+                  into the Apollo Store
                 </li>
               </ul>
             </div>
@@ -56,7 +55,6 @@ const Projects = () => {
               <h5 className="h5Text">Front End</h5>
               <ul>
                 <li>React Native</li>
-                <li>Redux</li>
                 <li>Axios</li>
                 <li>Expo</li>
                 <li>React Navigation</li>
